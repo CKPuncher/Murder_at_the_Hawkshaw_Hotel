@@ -13,34 +13,18 @@ Suspect::Suspect(string name)
 	_guiltyFlag = false;
 }
 
-// CONSTRUCTOR FROM A POINTER [MIGHT NOT NEED IT... SEE EXAM 2]
-/*Suspect::Suspect(Suspect* suspect)
-{
-	if (suspect != NULL)
-	{
-		_name = suspect->getName();
-		_guiltyFlag = suspect->getGuiltyFlag();
-		
-		_trueAnswers.push_back(suspect->getTrueAnswer(1));
-		_trueAnswers.push_back(suspect->getTrueAnswer(2));
-
-		_falseAnswers.push_back(suspect->getFalseAnswer(1));
-		_falseAnswers.push_back(suspect->getFalseAnswer(2));
-	}
-}*/
-
 // SETTERS
 void Suspect::setGuiltyFlag(bool guiltyFlag)
 {
 	_guiltyFlag = guiltyFlag;
 }
 
-void Suspect::setGuiltyAnswer(string answer) // takes in a string, pushes it back into _trueAnswers
+void Suspect::setGuiltyAnswer(string answer) // takes in a string, pushes it back into _guiltyAnswers
 {
 	_guiltyAnswers.push_back(answer);
 }
 
-void Suspect::setInnocentAnswer(string answer) // takes in a string, pushes it back into _falseAnswers
+void Suspect::setInnocentAnswer(string answer) // takes in a string, pushes it back into _innocentAnswers
 {
 	_innocentAnswers.push_back(answer);
 }

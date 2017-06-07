@@ -23,9 +23,6 @@ public:
 	and then pick one later and set to TRUE with setGuiltyFlag().*/
 	Suspect(string name);
 
-	// CONSTRUCTOR FROM A POINTER
-	Suspect(Suspect* suspect);
-
 	// SETTERS
 	void setGuiltyFlag(bool guitlyFlag);
 	void setGuiltyAnswer(string answer); // takes in a string, and pushes it back into _guiltyAnswers

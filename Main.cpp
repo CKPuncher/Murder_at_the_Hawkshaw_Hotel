@@ -16,6 +16,7 @@ void introduction();
 Suspect* whichSuspectTalkTo(vector<Suspect*> &s); // LETS PLAYER CHOOSE WHO TO INTERVIEW
 int interview(Suspect* interviewee); // INTERVIEWS CHOSEN SUSPECT AND THEN RETURNS 1 OR 0 FOR CONTINUING INTERVIEWING
 void guess(vector<Suspect*> &s); // LETS PLAYER GUESS WHO THE KILLER IS... FUN PART!!!
+// -------------------------------
 
 int main()
 {
@@ -132,7 +133,7 @@ void introduction() //PAUL
 	cout << "Murder! There's been a murder at the Hawkshaw Hotel, the hotel where " << endl;
 	cout << "all the great detectives stay on their vacations! You yourself are a " << endl;
 	cout << "detective, one of the best in the world. The scene of the crime sits " << endl;
-	cout << "before you - a bloody mess(quite literally). The body is on the floor, " << endl;
+	cout << "before you -- a bloody mess (quite literally). The body is on the floor, " << endl;
 	cout << " there is broken dishware (a sign of a struggle!) and a number of " << endl;
 	cout << "rather grotesque knife wounds inflicted on the victim. There is no " << endl;
 	cout << "knife to be found, however, so you have no fingerprints to go off of." << endl << endl;
@@ -143,8 +144,8 @@ void introduction() //PAUL
 	cout << "deduce, by means of individual interviews with each tenant, who the " << endl;
 	cout << "killer is." << endl << endl;
 
-	cout << "You will have two questions you can ask each suspect - time is of the" << endl;
-	cout << "esscence. When you feel you've gathered sufficient information, you " << endl;
+	cout << "You will have two questions you can ask each suspect -- time is of the" << endl;
+	cout << "essence. When you feel you've gathered sufficient information, you " << endl;
 	cout << "can make your accusation. But beware---you can only accuse ONCE, so " << endl;
 	cout << "make it count!" << endl;
 	cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl << endl << endl;

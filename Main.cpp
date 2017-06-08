@@ -169,7 +169,7 @@ Suspect* whichSuspectTalkTo(vector<Suspect*> &s)
 int interview(Suspect* interviewee)
 {
 	unsigned int choice;
-	cout << "Choose a question to ask (1 or 2): " << endl;
+	cout << "Choose a question to ask (enter 1 or 2): " << endl;
 	cout << "1. Where were you at the time of the murder?" << endl;
 	cout << "2. What was your relation to the victim?" << endl;
 	do {
@@ -196,7 +196,7 @@ int interview(Suspect* interviewee)
 void guess(vector<Suspect*> &s)
 {
 	unsigned int choice; //errors went away when i did this, dont know why
-	cout << "WHO'S THE KILLER?" << endl;
+	cout << "WHO'S THE KILLER? (enter number)" << endl;
 	cout << "1. Bob\n2. LeAnne\n3. Penelope\n4. Sam\n5. Jackson\n" << endl;
 	do {
 		cin >> choice;
